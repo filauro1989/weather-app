@@ -1,19 +1,18 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  name: 'HomePage'
-})
+<script setup>
+import SearchBox from '@/components/SearchBox.vue'
 </script>
 
 <template>
-  <div class="page-container">
-    <md-app> CIAO </md-app>
+  <div class="HomePage">
+    <SearchBox />
   </div>
 </template>
 
-<style scoped>
+<style lang="scss">
 .HomePage {
-  background-color: seagreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
 }
 </style>
